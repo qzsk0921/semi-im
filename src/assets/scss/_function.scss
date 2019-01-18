@@ -1,0 +1,18 @@
+
+$baseFontSize: 75px;
+
+@function torem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+
+@mixin eqWH($num){
+  width: $num;
+  height: $num;
+}
+
+@mixin placeholder ($color) {
+  ::-webkit-input-placeholder { 
+    color: $color; 
+  } 
+}
+
